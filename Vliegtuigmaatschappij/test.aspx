@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="knopje" runat="server" OnClick="Button1_Click" Text="knop" BackColor="#66FF66" />
+            <asp:Button ID="knopje" runat="server" OnClick="Button1_Click" Text="knop" BackColor="#000000" />
         </div>
     </form>
 </body>
