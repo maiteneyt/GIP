@@ -20,7 +20,7 @@
 <p>
     <asp:GridView ID="dgvKlanten" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="KlantnummerID" DataSourceID="dstKlantenVolledig">
         <Columns>
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             <asp:BoundField DataField="KlantnummerID" HeaderText="KlantnummerID" InsertVisible="False" ReadOnly="True" SortExpression="KlantnummerID" />
             <asp:BoundField DataField="Voornaam" HeaderText="Voornaam" SortExpression="Voornaam" />
             <asp:BoundField DataField="Familienaam" HeaderText="Familienaam" SortExpression="Familienaam" />

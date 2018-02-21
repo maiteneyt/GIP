@@ -44,8 +44,10 @@ namespace Vliegtuigmaatschappij
             cmd.Parameters.AddWithValue("@geslacht", txtGeslacht.Text);
             cmd.Parameters.AddWithValue("@geboortedatum", txtGeboortedatum.Text);
             cmd.Parameters.AddWithValue("@stoelnummer", cboStoelnummer.SelectedItem.ToString());
-            cmd.Parameters.AddWithValue("@klantnummerID", CboLeden.SelectedItem.ToString());
-
+            //cmd.Parameters.AddWithValue("@personeelsID", ????????????);
+            cmd.Parameters.AddWithValue("@klantnummerID", CboLeden.SelectedValue.ToString());
+            //cmd.Parameters.AddWithValue("@VluchtID", ????????????????);
+            
 
             cnn.Open();
             cmd.ExecuteNonQuery();
