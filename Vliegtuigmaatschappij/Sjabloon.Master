@@ -11,15 +11,21 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            logo<br />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Image ID="Image1" runat="server" Height="119px" ImageUrl="~/Knipsel vliegtuig.PNG" Width="204px" />
             <br />
-            naviagie<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            Belgium fly<br />
+            Torhoutsesteenweg 25<br />
+            1000 Brussel<br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
                 </p>
             </asp:ContentPlaceHolder>
         </div>
-    </form>
     <p>
-        email</p>
-</body>
+        email:
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Mailto:info@belgiumfly.be">info@belgiumfly.be</asp:HyperLink>
+        </p>
+    </form>
+    </body>
 </html>
